@@ -1,0 +1,890 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Urbanist:wght@500;600&display=swap');
+/* Font style Lato y Urbanist */
+
+/* !----------VARIABLES---------- */
+
+:root {
+    --color-lila:#331f6c; 
+    --color-morado:#480b29;
+    --color-rosado:#b26b67;
+    --color-fondo-claro:#cacce3;
+    --color-fondo-gris:#abadc6; 
+}
+
+/* !-----------RESET----------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* !----------HEADER----------- */
+
+.navbar {
+    background-color: var(--color-lila);
+}
+
+.navbar-collapse {
+    justify-content: end;
+}
+
+.navbar-brand img {
+    height: 40px;
+    width: 40px;
+    margin: 10px 10px 10px 15px;
+} 
+
+.nav-link {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+}
+
+.navbar-toggler {
+    color: #b26b67;
+}
+
+/* !-------------MAIN------------ */
+
+/* *PAGINA INDEX */
+
+.hero {
+    background-image: url(../img/fondo.png);
+    background-size: cover;
+    height: 92vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 40px;
+    width: 50vw;
+    color: #331f6c;
+    padding: 30px;
+    margin-left: 20px;
+    border: 5px solid #331f6c;
+    border-radius: 4px;
+    background-color: #fcfcfc4a;
+    box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
+    -webkit-box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
+    -moz-box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
+}
+
+.hero h2 {
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 25px;
+    color: #1c0b4b;
+    padding: 30px;
+    width: 50vw;
+}
+
+.informacion {
+    background-color: #cacce3;
+}
+
+.informacionProposito {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.informacionProposito img {
+    width: 30vw;
+    height: 38vh;
+    object-fit: cover;
+    border: 3px solid #480b29;
+    border-radius: 4px;
+    margin: 20px 20px 20px 0px;
+    box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
+    -webkit-box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
+    -moz-box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
+}
+
+.informacionProposito div {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.informacionProposito div h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color:#480b29;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    margin-bottom: 40px;
+}
+
+.informacionProposito div h4 {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.informacionProposito div p {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #39383b ;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.informacionMetodologia {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.informacionMetodologia img {
+    width: 30vw;
+    height: 38vh;
+    object-fit: cover;
+    border: 3px solid #480b29;
+    border-radius: 4px;
+    margin: 20px 0px 20px 20px;
+    box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
+    -webkit-box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
+    -moz-box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
+}
+
+.informacionMetodologia div {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: right;
+}
+
+.informacionMetodologia div h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color:#480b29;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    margin-bottom: 40px;
+}
+
+.informacionMetodologia div h4 {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.informacionMetodologia div p {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #39383b ;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.etapas {
+    background-color: #b26b67;
+}
+
+.etapas h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+    padding: 30px;
+    text-align: center;
+}
+
+.etapasEtiquetas {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.etapasEtiquetas div {
+    width: 250px;
+    border: 3px solid #480b29;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    background-color: #dcd5e0;
+    margin: 10px 10px 40px 10px;
+    box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
+    -webkit-box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
+    -moz-box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
+}
+
+.etapasEtiquetas div img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 1px solid #b8acbe;
+}
+
+.etapasEtiquetas div p {
+    width: 100%;
+    height: 50px;
+    font-family: 'Lato', sans-serif;
+    color: #39383b ;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    padding: 5px;
+}
+
+/* *PAGINA NUESTRO EQUIPO */
+
+.equipo {
+    background-color: #e0e8e8;
+}
+
+.equipo h1 {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 40px;
+    color: #331f6c;
+    text-align: center;
+    padding: 30px;
+}
+
+.equipoEtiquetas {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.equipoEtiquetas div {
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    display: inline-block;
+    margin: 20px 10px;
+}
+
+.equipoEtiquetas div img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 150px;
+    padding: 4px;
+    background: linear-gradient(#331f6c, #480b29, #FFFADE) padding-box;
+    box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
+    -webkit-box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
+    -moz-box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
+}
+
+.equipoEtiquetas div h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #331f6c;
+    padding: 15px 5px 0px 5px;
+}
+
+.equipoEtiquetas div p {
+    font-family: 'Lato', sans-serif; 
+    font-size: 15px;
+    color: #39383b;
+    padding: 5px;
+}
+
+.indicadores {
+    background-color: #7CB3C5;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.indicadores div {
+    width: 30%;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.indicadores div h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    color: #480b29;
+    padding: 10px;
+}
+
+.indicadores div p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: black;
+    padding: 10px;
+}
+
+.lema {
+    background-color: #cacce3;
+}
+
+.galeria {
+    background-color: #cacce3;
+}
+
+.tituloGaleria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.galeria h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: #331f6c;
+    margin: 15px 25px 15px 15px;
+}
+
+.galeria p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #39383b;
+    margin: 10px 15px 10px 15px;
+}
+
+.gridGaleria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+    gap: 10px;
+    margin: 15px 15px 0px 15px;
+    padding-bottom: 45px;
+}
+
+.gridItem {
+    position: relative;
+    box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
+    -webkit-box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
+    -moz-box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
+}
+
+.gridItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.valores {
+    background-color: #b26b67; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #331f6c, #480b29, #5b203e) padding-box;
+}
+
+.valores p {
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color:white;
+}
+
+.gridItem h4 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: #341f6cbe; /* transparencia */
+    color: white;
+    text-align: center;
+    margin-bottom: 0px !important;
+}
+
+.item4 {
+    grid-row: span 2;
+}
+
+.item8 {
+    grid-column: span 2;
+}
+
+/* *PAGINA INSTRUCTIVOS */
+
+.videos {
+    background-color: #cacce3;
+}
+
+.videos h1 {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 40px;
+    color: #331f6c;
+    text-align: center;
+    padding: 30px;
+}
+
+.videosEtiquetas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.videosEtiquetasContenedor {
+    background-color: white;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #331f6c, #480b29, #b26b67) 1;
+    border-style: solid;
+    margin: 10px;
+    display: flex;
+}
+
+.videosEtiquetasContenedor iframe {
+    width: 400px;
+    height: 230px;
+    margin: 30px;
+    order: 1;
+}
+
+.videosEtiquetasTexto {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.videosEtiquetasTexto h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: #331f6c;
+    padding: 10px;
+}
+
+.videosEtiquetasTexto p{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    color: #39383b;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.boton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botonEvaluar {
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #331f6c;
+    color: white;
+    padding: 5px;
+    margin-bottom: 5px;
+} 
+
+.botonGuia {
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #b26b67;
+    color: white;
+    padding: 5px;
+    margin-bottom: 5px;
+} 
+
+/* *PAGINA PROBLEMAS FRECUENTES */
+
+.problemas {
+    background-color: #cacce3;
+}
+
+.problemas h1 {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 40px;
+    color: #331f6c;
+    text-align: center;
+    padding: 30px;
+}
+
+.testimonio {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonioTexto {
+    background-color: #b26b67;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.testimonioTexto h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 90px;
+}
+
+.testimonioTexto p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.testimonio iframe {
+    height: 450px;
+    width: 60%;
+}
+
+.preguntas {
+    background-color: #cacce3
+}
+
+.preguntasTitulo h2 {
+    font-family: 'lato', sans-serif;
+    font-size: 25px;
+    color: #1c0b4b;
+    font-weight: 700;
+    padding: 25px 15px;
+}
+
+/* Correcciones de bootstrap accordion */
+
+.accordion {
+    padding: 10px 15px 60px 15px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #abadc6;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #5b203e;
+}
+
+.accordion-button.collapsed {
+    background-color: #abadc6;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #331f6c;
+}
+
+.accordion-body {
+    background-color: #cacce3;
+    font-family: 'Lato', sans-serif;
+}
+
+.accordion-button:focus {
+    border-color: #480b29;
+    box-shadow: 0 0 0 0.25rem #5b203e;
+}
+
+/* *PAGINA QUIERO APORTAR */
+
+.aporte {
+    background-image: url(../img/mailbox.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 82vh;
+}
+
+.aporte h1 {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 40px;
+    color: #331f6c;
+    text-align: center;
+    padding: 20px;
+}
+
+.form {
+    height: 58vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.form div label {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: white;
+    padding: 5px;
+}
+
+.form div input {
+    width: 400px;
+    height: 20px;
+}
+
+.form div select {
+    width: 400px;
+    height: 22px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #39383b;
+}
+
+.form div textarea {
+    width: 400px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+#botonSolido {
+    width: 150px;
+    height: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: white;   
+    font-weight: 700;
+    background-color: #331f6c;
+}
+
+/* !----------FOOTER----------- */
+
+.footer {
+    background-color: #480b29;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+}
+
+.footerLinks {
+    border-right: 1px solid gray;
+    padding-right: 20px;
+}
+
+.footerLinks ul {
+    list-style: none;
+    margin-bottom: 0px;
+    padding-left: 0px; /* corrector de bootstrap */
+}
+
+.footerLinks ul li {
+    display: inline-block;
+}
+
+.footerLinks ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+.footerLinks p {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+.footerRedes {
+    display: flex;
+    padding-left: 20px;
+}
+
+.footerRedes a {
+    font-size: 8vh;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+/* !-----------MEDIA QUERIES------------- */
+
+/* *PAGINA NUESTRO EQUIPO  */
+
+@media screen and (max-width:1300px) {
+    .gridGaleria {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 200px;
+    }
+    .gridItem {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .item3 {
+        grid-row: span 2;
+    }
+    .item10 {
+        grid-column: span 2;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .hero {
+        align-items: center;
+    }
+    .hero h1 {
+        width: 70vw;
+        text-align: center;
+    }
+    .hero h2 {
+        text-align: center;
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .tituloGaleria {
+        align-items: center;
+        text-align: center;
+    }
+    .gridGaleria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 200px;
+    }
+    .gridItem {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .informacionProposito div p {
+        font-size: 18px;
+    }
+    .informacionMetodologia div p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:920px) {
+    .informacionProposito {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .informacionProposito img {
+        width: 80vw;
+        margin: 20px 0px 20px 0px;
+    }
+    .informacionProposito div {
+        width: 80vw;
+        text-align: center;
+    }
+    .informacionMetodologia {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+    }
+    .informacionMetodologia img {
+        width: 80vw;
+        margin: 20px 0px 20px 0px;
+    }
+    .informacionMetodologia div {
+        width: 80vw;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:820px) {
+    .footerLinks {
+        display: none;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+    .hero h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:640px) and (min-width:0px) {
+    .indicadores {
+        flex-direction: column;
+    }
+    .indicadores div {
+        width: 100%;
+    }
+    .gridGaleria {
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px;
+    }
+}
+
+/* !BOOTSTRAP */
+/* getbootstrap.com */
+/* Diseño rapido trayendo librerias y frameworks */
+/* Es responsive entre comillas */
+/* Funciona por la aplicaciond e clases en la nube */
+/* Es para elementos puntuales. Menu, carrousel, FAQ */
+/* Tener cuidado en la version en que estamos */
+/* Hay que leer la documentacion de bootstrap para entender como usar el elemento o componente*/
+/* No trabajar en la mas nueva. La anterior */
+/* Se puede descargar pero es innecesario.  */
+/* *COMO LINKEAR CSS BOOTSTRAP introduction - css - copiar link en el html. bootstrap.min.css es el documento css que trabajamos. Si se descarga local, se linkea ese a las hojas html. Antes de MI css, para que mi CSS lo pise.*/
+/* *COMO LINKEAR JS  copiar desde instroduction - js y pegar debajo del footer en el html*/
+/* Copio el HTML de bootstrap en mi codigo. 
+* Arreglo la tabulacion con  click derecho Format Document*/
+/* Editar los textos del HTML y las imagenes*/
+/* *Hay que eliminar las clases que correspondan y armarlos como nos guste. Se trabajan llamando a los elementos header nav por ejemplo. Es fundamental inspeccionar para entender donde esta aplicada la propiedad. A que clase corresponde. */
+
+
+
+
+
+
+
+
+
+
+/* !NOTAS PARA ELIMINAR LUEGO */
+
+/* 
+
+:active al hacer click
+:hover al pasar el mouse 
+:visited cuando ya visite el link  
+:focus paa los input al tocar el elemento
+outline:none a los inpiut antes para que funcione elcolor del borde
+el profe recomeienda trabajar los form con grid
+.cajas div:nth-child(2 even y odds 5n acada 5 3n cada 3)
+.cajas div:not(.caja-3)
+h1::first-letter 
+
+display: none
+visibility: hidden. queda el lugar
+
+@media (max-widtj:10px) and (min-width:5px))
+@media print
+@media (orientation-landscape)
+
+https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
+https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements
+
+https://squoosh.app/
+
+*/
