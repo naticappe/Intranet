@@ -297,7 +297,7 @@
 }
 
 .equipoEtiquetas div {
-    width: 300px;
+    width: 340px;
     height: 350px;
     text-align: center;
     display: inline-block;
@@ -329,11 +329,22 @@
     font-size: 15px;
     color: #39383b;
     padding: 5px;
+    line-height: 1.2;
+}
+
+.black {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
 }
 
 .indicadores {
+    height: 230px;
     background-color: var(--color-terceriario);
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
@@ -350,15 +361,15 @@
 .indicadores div h2 {
     font-family: 'Lato', sans-serif;
     font-weight: 900;
-    font-size: 40px;
-    color: var(--color-secundario);
+    font-size: 45px;
+    color: white;
     padding: 10px;
 }
 
 .indicadores div p {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 18px;
     color: black;
     padding: 10px;
 }
@@ -378,7 +389,7 @@
     font-size: 25px;
     font-weight: 700;
     color: var(--color-principal);
-    margin: 15px 25px 15px 15px;
+    margin: 30px 25px 30px 15px;
 }
 
 .galeria p {
@@ -881,6 +892,7 @@
 @media (max-width:640px) and (min-width:0px) {
     .indicadores {
         flex-direction: column;
+        height: 600px;
     }
     .indicadores div {
         width: 100%;
