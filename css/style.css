@@ -34,11 +34,10 @@
     justify-content: end;
 }
 
-.navbar-brand img {
-    height: 40px;
-    width: 40px;
-    margin: 10px 10px 10px 15px;
-} 
+.fa-heart-pulse {
+    color: var(--color-fondo-intermedio);
+    font-size: 30px;
+}
 
 .nav-link {
     color: white;
@@ -57,7 +56,7 @@
 .hero {
     background-image: url(../img/fondo.png);
     background-size: cover;
-    height: 92vh;
+    height: 93vh;
     background-repeat: no-repeat;
     background-position: right;
     background-attachment:fixed;
@@ -67,29 +66,46 @@
     justify-content: center;
 }
 
-.hero h1 {
-    font-weight: 600;
-    font-family: 'Urbanist', sans-serif;
-    font-size: 40px;
+.heroTitulo {
     width: 50vw;
-    color: white;
-    padding: 30px;
     margin-left: 20px;
-    border: 5px solid var(--color-principal);
-    border-radius: 4px;
-    background-color: #493d5ba6;
-    box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
-    -webkit-box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
-    -moz-box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
+    border-top: 5px solid var(--color-principal);
+    border-bottom: 5px solid var(--color-principal); 
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.hero h2 {
-    font-weight: 600;
-    font-family: 'Urbanist', sans-serif;
+.heroTitulo h1 {
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    color: var(--color-principal);
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 0px;
+}
+
+.heroTitulo h1 span {
+    font-size: 70px;
+}
+
+.heroTitulo h2 {
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
     font-size: 25px;
     color: var(--color-principal);
-    padding: 30px;
-    width: 50vw;
+    margin-bottom: 0px;
+    padding-bottom: 15px;
+}
+
+.hero h3 {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 25px;    
+    margin-bottom: 0px;
+    margin-left: 20px;
+    padding-top: 20px;
+    text-align: center;
+    width: 50%;
+    font-weight: 600;
 }
 
 .informacion {
@@ -745,14 +761,16 @@
 @media screen and (max-width:1100px) {
     .hero {
         align-items: center;
+        justify-content: end;
     }
-    .hero h1 {
+    .heroTitulo {
         width: 70vw;
-        text-align: center;
     }
-    .hero h2 {
-        text-align: center;
-        width: 70vw;
+    .heroTitulo h1 {
+        padding: 0px 10px 0px 10px;
+    }
+    .hero h3 {
+        display: none;
     }
 }
 
@@ -815,10 +833,25 @@
 }
 
 @media screen and (max-width:560px) {
-    .hero h1 {
+    .heroTitulo h1 {
+        font-size: 40px;
+    }
+    .heroTitulo h1 span {
+        font-size: 60px;
+    } ;
+    .heroTitulo h2 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .heroTitulo h1 {
         font-size: 30px;
     }
-    .hero h2 {
+    .heroTitulo h1 span {
+        font-size: 50px;
+    } 
+    .heroTitulo h2 {
         font-size: 20px;
     }
 }
