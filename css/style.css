@@ -122,7 +122,7 @@
     width: 30vw;
     height: 38vh;
     object-fit: cover;
-    border: 3px solid var(--color-secundario);
+    border: 2px solid var(--color-secundario);
     border-radius: 4px;
     margin: 20px 20px 20px 0px;
     box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
@@ -174,7 +174,7 @@
     width: 30vw;
     height: 38vh;
     object-fit: cover;
-    border: 3px solid #480b29;
+    border: 2px solid var(--color-secundario);
     border-radius: 4px;
     margin: 20px 0px 20px 20px;
     box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
@@ -236,34 +236,44 @@
     flex-wrap: wrap;
 }
 
-.etapasEtiquetas div {
-    width: 250px;
-    border: 3px solid var(--color-secundario);
+.contenedor {
+    width: 22%;
+    border: 1px solid white;
     border-radius: 4px;
-    margin-bottom: 15px;
-    background-color: #dcd5e0;
-    margin: 10px 10px 40px 10px;
+    background-color:var(--color-fondo-intermedio);
+    margin: 10px 10px 60px 10px;
     box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
     -webkit-box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
     -moz-box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
 }
 
-.etapasEtiquetas div img {
+.contenedor img {
     width: 100%;
     height: 300px;
     object-fit: cover;
     border-bottom: 1px solid var(--color-fondo-intermedio);
 }
 
-.etapasEtiquetas div p {
+.contenedorTexto {
     width: 100%;
-    height: 50px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.contenedorTexto p {
+    width: 100;
     font-family: 'Lato', sans-serif;
-    color: #39383b ;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 400;
     text-align: center;
+    line-height: 1.2;
     padding: 5px;
+    margin-bottom: 0px; /* correccion Bootstrap */
+}
+
+.contenedorTexto p span {
+    font-weight: 600;
 }
 
 /* *PAGINA NUESTRO EQUIPO */
@@ -710,15 +720,19 @@
 
 .footerLinks ul li a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     font-weight: 700;
     margin-right: 8px;
 }
 
+.footerLinks ul li a:hover {
+    color:var(--color-secundario)
+}
+
 .footerLinks p {
-    color: white;
+    color: black;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     font-style: italic;
@@ -793,6 +807,9 @@
     .informacionMetodologia div p {
         font-size: 18px;
     }
+    .contenedor {
+        width: 380px;
+    }
 }
 
 @media screen and (max-width:920px) {
@@ -823,7 +840,12 @@
         width: 80vw;
         text-align: center;
     }
+}
 
+@media screen and (max-width:800px) {
+    .etapasEtiquetas div {
+        width: 80Vw;
+    }
 }
 
 @media screen and (max-width:820px) {
@@ -868,57 +890,3 @@
         grid-template-rows: 200px;
     }
 }
-
-/* !BOOTSTRAP */
-/* getbootstrap.com */
-/* Diseño rapido trayendo librerias y frameworks */
-/* Es responsive entre comillas */
-/* Funciona por la aplicaciond e clases en la nube */
-/* Es para elementos puntuales. Menu, carrousel, FAQ */
-/* Tener cuidado en la version en que estamos */
-/* Hay que leer la documentacion de bootstrap para entender como usar el elemento o componente*/
-/* No trabajar en la mas nueva. La anterior */
-/* Se puede descargar pero es innecesario.  */
-/* *COMO LINKEAR CSS BOOTSTRAP introduction - css - copiar link en el html. bootstrap.min.css es el documento css que trabajamos. Si se descarga local, se linkea ese a las hojas html. Antes de MI css, para que mi CSS lo pise.*/
-/* *COMO LINKEAR JS  copiar desde instroduction - js y pegar debajo del footer en el html*/
-/* Copio el HTML de bootstrap en mi codigo. 
-* Arreglo la tabulacion con  click derecho Format Document*/
-/* Editar los textos del HTML y las imagenes*/
-/* *Hay que eliminar las clases que correspondan y armarlos como nos guste. Se trabajan llamando a los elementos header nav por ejemplo. Es fundamental inspeccionar para entender donde esta aplicada la propiedad. A que clase corresponde. */
-
-
-
-
-
-
-
-
-
-
-/* !NOTAS PARA ELIMINAR LUEGO */
-
-/* 
-
-:active al hacer click
-:hover al pasar el mouse 
-:visited cuando ya visite el link  
-:focus paa los input al tocar el elemento
-outline:none a los inpiut antes para que funcione elcolor del borde
-el profe recomeienda trabajar los form con grid
-.cajas div:nth-child(2 even y odds 5n acada 5 3n cada 3)
-.cajas div:not(.caja-3)
-h1::first-letter 
-
-display: none
-visibility: hidden. queda el lugar
-
-@media (max-widtj:10px) and (min-width:5px))
-@media print
-@media (orientation-landscape)
-
-https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
-https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements
-
-https://squoosh.app/
-
-*/
