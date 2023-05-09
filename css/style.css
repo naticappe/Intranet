@@ -72,7 +72,7 @@
     border-top: 5px solid var(--color-principal);
     border-bottom: 5px solid var(--color-principal); 
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 45px;
 }
 
 .heroTitulo h1 {
@@ -80,12 +80,12 @@
     font-family: 'Lato', sans-serif;
     font-size: 50px;
     color: var(--color-principal);
-    padding: 10px 10px 0px 10px;
+    padding: 0px 10px 0px 10px;
     margin-bottom: 0px;
 }
 
 .heroTitulo h1 span {
-    font-size: 70px;
+    font-size: 60px;
 }
 
 .heroTitulo h2 {
