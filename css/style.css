@@ -903,6 +903,20 @@
     }
 }
 
+@media screen and (max-width:640px) {
+    .indicadores {
+        flex-direction: column;
+        height: 600px;
+    }
+    .indicadores div {
+        width: 100%;
+    }
+    .gridGaleria {
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px;
+    }
+}
+
 @media screen and (max-width:560px) {
     .heroTitulo h1 {
         font-size: 40px;
@@ -924,19 +938,5 @@
     } 
     .heroTitulo h2 {
         font-size: 20px;
-    }
-}
-
-@media (max-width:640px) and (min-width:0px) {
-    .indicadores {
-        flex-direction: column;
-        height: 600px;
-    }
-    .indicadores div {
-        width: 100%;
-    }
-    .gridGaleria {
-        grid-template-columns: 1fr;
-        grid-template-rows: 200px;
     }
 }
