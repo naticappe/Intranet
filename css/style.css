@@ -664,7 +664,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 82vh;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
 }
 
 .aporte h1 {
@@ -673,10 +675,11 @@
     color:var(--color-principal);
     text-align: center;
     padding: 20px;
+    margin-bottom: 10px;
+    height: 100px;
 }
 
 .form {
-    height: 58vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
