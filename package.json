@@ -1,0 +1,17 @@
+{
+  "name": "proyecto-coder-final",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Esta es una web generada como intranet institucional de entrega digital</h1>\r <h3 align=\"center\">La finalidad de la web es servir como herrramienta principal de un equipo implamentador de un software de entrega digital de imagenes medicas</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.22"
+  }
+}

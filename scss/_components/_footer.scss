@@ -1,0 +1,46 @@
+.footer {
+    background-color: $color-footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    .footerLinks {
+        border-right: 1px solid gray;
+        padding-right: 20px;
+        ul {
+            list-style: none;
+            margin-bottom: 0px;
+            padding-left: 0px; /* corrector de bootstrap */
+            li {
+                display: inline-block;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-family: 'Lato', sans-serif;
+                    font-size: 14px;
+                    font-weight: 700;
+                    margin-right: 8px;
+                    &:hover {
+                        color: $color-secundario
+                    }
+                }
+            }
+        }
+        p {
+            color: black;
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+            font-style: italic;
+            margin-bottom: 0px;
+        }
+    }
+    .footerRedes {
+        display: flex;
+        padding-left: 20px;
+        a {
+            font-size: 8vh;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+}
