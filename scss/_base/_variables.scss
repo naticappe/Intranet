@@ -1,5 +1,4 @@
 /* PALETA DE COLORES */
-
 $color-navegacion:#493D5B;
 $color-principal:#493D5B;
 $color-secundario:#7A6C8D;
@@ -12,3 +11,31 @@ $color-gradiente-claro:#BEA6A0;
 $color-etiquetas:#493d5ba6;
 $color-footer:#cdcbce;
 
+/* VARIABLES FORM */
+%formLabel {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #464648;
+    padding: 8px 5px 0px 0px;
+}
+
+%formInput {
+    background-color: $color-fondo-claro;
+    border: 1px solid $color-fondo-intermedio;
+    border-radius: 6px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+    padding-left: 15px;
+}
+
+%formPlaceholder {
+    color: #686769;
+}
+
+%formFocus {
+    background-color: white;
+    outline: 3px solid $color-secundario;
+}

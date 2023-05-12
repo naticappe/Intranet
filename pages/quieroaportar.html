@@ -45,31 +45,34 @@
     <main>
         <section class="aporte">
             <h1>Ayudanos a Mejorar</h1>
-            <div class="form">
-                <div>
-                    <label for="nombre">Nombre y Apellido</label>
-                    <input type="text" name="nombre" id="nombre">
-                </div>
-                <div>
-                    <label for="mail">Mail</label>
-                    <input type="email" form="mail" id="mail">    
-                </div>
-                <div>
-                    <label for="puesto">Puesto</label>
-                    <select name="puesto" id="puesto"> <!-- Menu desplegable -->
-                        <option value="secretario">Secretario de Atencion Personalizada</option>
-                        <option value="entregas">Secretario de Entregas</option>
-                        <option value="recepcion">Recepcionista</option>
-                        <option value="licenciado">Licenciado en Produccion de Bioimagenes</option>
-                        <option value="medico">Medico u otro profesional de la salud</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="comentario">Dejanos tu comentario</label>
-                    <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                    <input id="botonSolido" type="submit">
+            <div class="aporteForm">
+                <div class="form">
+                    <div>
+                        <label for="nombre">Nombre y Apellido</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingresá tu nombre y apellido">
+                    </div>
+                    <div>
+                        <label for="mail">Mail</label>
+                        <input type="email" form="mail" id="mail" placeholder="Ingresá tu email"    
+                    </div>
+                    <div>
+                        <label for="puesto">Puesto</label>
+                        <select name="puesto" id="puesto"> <!-- Menu desplegable -->
+                            <option value="" >Seleccioná tu puesto: </option>
+                            <option value="secretario">Secretario de Atencion</option>
+                            <option value="entregas">Secretario de Entregas</option>
+                            <option value="recepcion">Recepcionista</option>
+                            <option value="licenciado">Licenciado en Bioimagenes</option>
+                            <option value="medico">Medico</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="comentario">Comentario</label>
+                        <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Dejanos tu comentario..."></textarea>
+                    </div>
+                    <div class="botonContenedor">
+                        <input id="botonSolido" type="submit">
+                    </div>
                 </div>
             </div>
         </section>

@@ -5,6 +5,31 @@
   box-sizing: border-box; }
 
 /* PALETA DE COLORES */
+/* VARIABLES FORM */
+.aporte .aporteForm .form div label {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #464648;
+  padding: 8px 5px 0px 0px; }
+
+.aporte .aporteForm .form div input, .aporte .aporteForm .form div select, .aporte .aporteForm .form div textarea {
+  background-color: #fdf9fe;
+  border: 1px solid #cdcbce;
+  border-radius: 6px;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: black;
+  padding-left: 15px; }
+
+.aporte .aporteForm .form div input::placeholder, .aporte .aporteForm .form div select, .aporte .aporteForm .form div textarea::placeholder {
+  color: #686769; }
+
+.aporte .aporteForm .form div input:focus, .aporte .aporteForm .form div select:focus, .aporte .aporteForm .form div textarea:focus {
+  background-color: white;
+  outline: 3px solid #7A6C8D; }
+
 .navbar {
   background-color: #493D5B; }
   .navbar .navbar-toggler {
@@ -470,11 +495,11 @@
       font-family: 'Lato', sans-serif; }
 
 .aporte {
-  background-image: url(../img/mailbox.png);
+  background: linear-gradient(166deg, white 0%, rgba(208, 208, 208, 0.0555035) 98%), url(../img/mailbox.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 600px;
+  height: 680px;
   display: flex;
   flex-direction: column; }
   .aporte h1 {
@@ -482,55 +507,45 @@
     font-size: 40px;
     color: #493D5B;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 10px;
     height: 100px; }
-  .aporte .form {
+  .aporte .aporteForm {
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 50px; }
-    .aporte .form div label {
-      display: block;
-      font-family: 'Lato', sans-serif;
-      font-size: 16px;
-      color: #39383b;
-      padding: 5px; }
-    .aporte .form div input {
-      width: 400px;
-      height: 40px;
-      border: 1px solid #cdcbce;
-      border-radius: 6px; }
-      .aporte .form div input:focus {
-        outline: 3px solid #7A6C8D; }
-    .aporte .form div select {
-      width: 400px;
-      height: 40px;
-      font-family: 'Lato', sans-serif;
-      font-size: 14px;
-      color: #39383b;
-      border: 1px solid #cdcbce;
-      border-radius: 6px; }
-      .aporte .form div select:focus {
-        outline: 3px solid #7A6C8D; }
-    .aporte .form div textarea {
-      width: 400px;
-      height: 100px;
-      margin-bottom: 20px;
-      border: 1px solid #cdcbce;
-      border-radius: 6px; }
-      .aporte .form div textarea:focus {
-        outline: 3px solid #7A6C8D; }
-    .aporte .form div #botonSolido {
-      width: 150px;
-      height: 40px;
-      font-family: 'Lato', sans-serif;
-      font-size: 14px;
-      color: white;
-      font-weight: 700;
-      background-color: #493D5B; }
-      .aporte .form div #botonSolido:hover {
-        background-color: #7A6C8D; }
+    align-items: center; }
+    .aporte .aporteForm .form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0px 50px 0px 50px; }
+      .aporte .aporteForm .form div label {
+        display: block; }
+      .aporte .aporteForm .form div input {
+        width: 400px;
+        height: 40px; }
+      .aporte .aporteForm .form div select {
+        width: 400px;
+        height: 40px; }
+      .aporte .aporteForm .form div textarea {
+        width: 400px;
+        height: 110px;
+        margin-bottom: 20px; }
+      .aporte .aporteForm .form div .botonContenedor {
+        display: flex;
+        justify-content: end; }
+        .aporte .aporteForm .form div .botonContenedor #botonSolido {
+          width: 150px;
+          height: 40px;
+          font-family: 'Lato', sans-serif;
+          font-size: 14px;
+          color: white;
+          font-weight: 700;
+          background-color: #493D5B;
+          border: 1px solid #493D5B;
+          align-items: end; }
+          .aporte .aporteForm .form div .botonContenedor #botonSolido:hover {
+            background-color: #7A6C8D; }
 
 .footer {
   background-color: #cdcbce;
@@ -611,6 +626,14 @@
   .etapas .etapasEtiquetas .contenedor {
     width: 380px; } }
 
+@media screen and (max-width: 990px) {
+  .aporte {
+    background-position: right; }
+    .aporte .aporteForm {
+      justify-content: center; }
+      .aporte .aporteForm .form {
+        /*                 align-items: center; */ } }
+
 @media screen and (max-width: 920px) {
   .informacion .informacionProposito {
     flex-direction: column-reverse;
@@ -659,6 +682,24 @@
       font-size: 60px; }
   .hero .heroTitulo h2 {
     font-size: 15px; } }
+
+@media screen and (max-width: 500px) {
+  .aporte .aporteForm .form div input {
+    width: 80vw; }
+  .aporte .aporteForm .form div select {
+    width: 80vw; }
+  .aporte .aporteForm .form div textarea {
+    width: 80vw; } }
+
+@media screen and (max-width: 480px) {
+  .aporte .aporteForm .form div label {
+    visibility: hidden; }
+  .aporte .aporteForm .form div input {
+    font-size: 16px; }
+  .aporte .aporteForm .form div select {
+    font-size: 16px; }
+  .aporte .aporteForm .form div textarea {
+    font-size: 16px; } }
 
 @media screen and (max-width: 400px) {
   .hero .heroTitulo h1 {
