@@ -7,13 +7,7 @@
     display: flex;
     flex-direction: column;
     h1 {
-        font-family: 'Urbanist', sans-serif;
-        font-size: 40px;
-        color:$color-principal;
-        text-align: center;
-        padding: 30px;
-        margin-bottom: 10px;
-        height: 100px;
+        @extend %PageTitulo;
     }
     .aporteForm {
         height: 100%;

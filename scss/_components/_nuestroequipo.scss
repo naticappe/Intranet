@@ -1,11 +1,7 @@
 .equipo {
     background-color: $color-fondo-claro;
     h1 {
-        font-family: 'Urbanist', sans-serif;
-        font-size: 40px;
-        color: $color-principal;
-        text-align: center;
-        padding: 30px;
+        @extend %PageTitulo;
     }
     .equipoEtiquetas {
         display: flex;
@@ -51,6 +47,7 @@
         }
     }
 }
+
 .indicadores {
     height: 230px;
     background-color: $color-terceriario;

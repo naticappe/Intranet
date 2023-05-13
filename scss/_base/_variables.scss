@@ -11,6 +11,15 @@ $color-gradiente-claro:#BEA6A0;
 $color-etiquetas:#493d5ba6;
 $color-footer:#cdcbce;
 
+/* VARIABLES GENERALES */
+%PageTitulo {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 40px;
+    color: $color-principal;
+    text-align: center;
+    padding: 30px;
+}
+
 /* VARIABLES FORM */
 %formLabel {
     font-family: 'Lato', sans-serif;
