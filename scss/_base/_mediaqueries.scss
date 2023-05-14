@@ -1,3 +1,35 @@
+@media screen and (max-width:1200px) {
+    .videos {
+        .videosEtiquetas {
+            .videosEtiquetasContenedor {
+                .videosEtiquetasTitulo {
+                    .iconos {
+                        .iconoGuia {
+                            display: inline-block;
+                            color: white;
+                            font-size: 20px;
+                            margin:10px 5px 10px 10px;
+                        }
+                        .iconoEvaluar {
+                            display: inline-block;
+                            color: white;
+                            font-size: 20px;
+                            margin:10px 10px 10px 5px;
+                        }
+                    }
+                }
+                .videosEtiquetasBody {
+                    .videosEtiquetasTexto {
+                        display: none;
+                    }
+                    .iframeContenedor {
+                        width: 40vw;
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media screen and (max-width:1300px) {
     .galeria {
@@ -140,6 +172,21 @@
         .etapasEtiquetas {
             .contenedor {
                 width: 80Vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:850px) {
+    .videos {
+        .videosEtiquetas {
+            .videosEtiquetasContenedor {
+                .videosEtiquetasBody {
+                        .iframeContenedor {
+                        width: 80vw;
+                        min-width: 280px;
+                    }
+                }
             }
         }
     }
