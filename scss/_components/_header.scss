@@ -7,7 +7,7 @@
         justify-content: end;
         .nav-link {
             color: white;
-            font-family: 'Lato', sans-serif;
+            font-family: nth($font,2);
             font-size: 15px;
         }
     }

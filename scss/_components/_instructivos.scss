@@ -4,9 +4,8 @@
         @extend %pageTitulo;
     }
     .videosEtiquetas {
-        display: flex;
+        @include flex (flex, center, normal);
         flex-wrap: wrap;
-        justify-content: center;
         padding-bottom: 40px;
         .videosEtiquetasContenedor {
             background: $color-fondo-claro;
@@ -17,17 +16,16 @@
             flex-direction: column;
             @extend %shadow;
             .videosEtiquetasTitulo {
-                display: flex;
-                justify-content: space-between;
                 border-bottom: 1px solid gray;
+                @include flex (flex, space-between, normal);
                 @extend %gradiente;
                 h2 {
-                    font-family: 'Lato', sans-serif;
+                    font-family: nth($font,2);
+                    font-weight: nth($weightFont2,2);
                     font-size: 18px;
-                    font-weight: 300;
+                    text-align: center;
                     color: white;
                     margin: 10px;
-                    text-align: center;
                 }
                 .iconos {
                     .iconoGuia {
@@ -42,11 +40,9 @@
                 display: flex;
                 .videosEtiquetasTexto {
                     width: 15vw;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
                     text-align: center;
                     margin: 0px 20px;
+                    @include flexD(flex, center, normal, column);
                     p {
                         @extend %pageParrafo;
                         line-height: 1.2;
@@ -56,56 +52,37 @@
                         display: flex;
                         flex-direction: column;
                         .botonGuia {
-                            font-family: 'Lato', sans-serif;
-                            font-size: 15px;
-                            color: #39383b;   
-                            font-weight: 300;
-                            background-color: $color-fondo-intermedio;
-                            border: 1px solid $color-fondo-intermedio;
-                            text-decoration: none;
-                            text-align: center;
-                            border-radius: 8px;
-                            width: 100%;
-                            height: 35px;
+                            @extend %botonVideos;
+                            @include size (100%, 35px);
                             padding-top: 5px;
                             margin-bottom: 10px;
                             &:hover {
                                 @extend %botonHover;
+                                outline: 3px solid $color-secundario;
                             }
                         }
                         .botonEvaluar {
-                            font-family: 'Lato', sans-serif;
-                            font-size: 15px;
-                            color: #39383b;   
-                            font-weight: 300;
-                            background-color: $color-fondo-intermedio;
-                            border: 1px solid $color-fondo-intermedio;
-                            text-decoration: none;
-                            text-align: center;
-                            border-radius: 8px;
-                            width: 100%;
-                            height: 35px;
+                            @include size (100%, 35px);
                             padding-top: 5px;
+                            @extend %botonVideos;
                             &:hover {
                                 @extend %botonHover;
+                                outline: 3px solid $color-secundario;
                             }
                         }
                     }
                 }
                 .iframeContenedor {
-                    width: 25vw;
-                    height: 0;
+                    @include size (25vw, 0);
                     overflow: hidden;
                     padding-bottom: 56.25%;
                     padding-top: 30px;
                     position: relative;
-                    border: 1px solid gray;
                     iframe {
-                        height: 100%;
+                        @include size (100%, 100%);
                         left: 0;
                         position: absolute;
                         top: 0;
-                        width: 100%;
                         z-index: 10;
                     }
                 }

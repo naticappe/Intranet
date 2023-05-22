@@ -4,19 +4,15 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 680px;
-    display: flex;
-    flex-direction: column;
+    @include flexD (flex, normal, normal, column);
     h1 {
         @extend %pageTitulo;
     }
     .aporteForm {
         height: 100%;
-        display: flex;
-        align-items: center;       
+        @include flex(flex, normal, center);     
         .form {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flexD (flex, center, normal, column);
             margin: 0px 50px 0px 50px;
             div {
                 label {
@@ -24,8 +20,7 @@
                     @extend %formLabel;
                 }
                 input {
-                    width: 400px;
-                    height: 40px;
+                    @include size (400px, 40px);
                     @extend %formInput;
                     &:focus {
                         @extend %formFocus;
@@ -35,8 +30,7 @@
                     }
                 }
                 select {
-                    width: 400px;
-                    height: 40px;
+                    @include size (400px, 40px);
                     @extend %formInput;
                     @extend %formPlaceholder;
                     &:focus {
@@ -44,9 +38,8 @@
                     }
                 }
                 textarea {
-                    width: 400px;
-                    height: 110px;
                     margin-bottom: 20px;
+                    @include size (400px, 110px);
                     @extend %formInput;
                     &:focus {
                         @extend %formFocus;
@@ -56,12 +49,10 @@
                     }
                 }
                 .botonContenedor {
-                    display: flex;
-                    justify-content: end;
+                    @include flex(flex, end, normal);
                     #botonSolido {
-                        width: 150px;
-                        height: 40px;
                         padding-left: 0px;
+                        @include size (150px, 40px);
                         @extend %boton;
                         &:hover {
                             background-color: $color-secundario;

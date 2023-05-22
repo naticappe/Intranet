@@ -1,9 +1,7 @@
 .footer {
     background-color: $color-footer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 12vh;
+    @include flex (flex, center, center);
     .footerLinks {
         border-right: 1px solid gray;
         padding-right: 20px;
@@ -16,9 +14,9 @@
                 a {
                     text-decoration: none;
                     color: black;
-                    font-family: 'Lato', sans-serif;
+                    font-family: nth($font,2);
+                    font-weight: nth($weightFont2,4);
                     font-size: 14px;
-                    font-weight: 700;
                     margin-right: 8px;
                     &:hover {
                         color: $color-secundario
@@ -28,7 +26,7 @@
         }
         p {
             color: black;
-            font-family: 'Lato', sans-serif;
+            font-family: nth($font,2);
             font-size: 14px;
             font-style: italic;
             margin-bottom: 0px;
@@ -36,6 +34,7 @@
     }
     .footerRedes {
         display: flex;
+        align-items: center;
         padding-left: 20px;
         a {
             font-size: 8vh;

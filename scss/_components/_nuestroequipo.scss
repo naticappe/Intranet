@@ -4,41 +4,36 @@
         @extend %pageTitulo;
     }
     .equipoEtiquetas {
-        display: flex;
-        justify-content: space-evenly;
+        @include flex (flex, space-evenly, normal);
         flex-wrap: wrap;
         div {
-            width: 340px;
-            height: 350px;
+            @include size (340px, 350px);
             text-align: center;
             display: inline-block;
             margin: 20px 10px;
             img {
-                width: 200px;
-                height: 200px;
+                @include size (200px, 200px);
                 object-fit: cover;
                 border-radius: 150px;
                 padding: 4px;
                 background: linear-gradient($color-gradiente-oscuro, $color-secundario, $color-terceriario) padding-box;
-                box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
-                -webkit-box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
-                -moz-box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
+                @extend %shadow;
             }
             h3 {
-                font-family: 'Lato', sans-serif;
+                font-family: nth($font,2);
+                font-weight: nth($weightFont2,4);
                 font-size: 20px;
-                font-weight: 700;
                 color: $color-principal;
                 padding: 15px 5px 0px 5px;
             }
             p {
-                font-family: 'Lato', sans-serif; 
+                font-family: nth($font,2); 
                 font-size: 15px;
                 color: #39383b;
                 padding: 5px;
                 line-height: 1.2;
                 .black {
-                    font-weight: 700;
+                    font-weight: nth($weightFont2,4);
                 }
                 .italic {
                     font-style: italic;
@@ -51,27 +46,23 @@
 .indicadores {
     height: 230px;
     background-color: $color-terceriario;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    @include flex (flex, space-evenly, center);
     flex-wrap: wrap;
     div {
         width: 30%;
         height: 150px;
+        @include flexD (flex, center, normal, column);
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         h2 {
-            font-family: 'Lato', sans-serif;
-            font-weight: 900;
+            font-family: nth($font,2);
+            font-weight: nth($weightFont2,5);
             font-size: 45px;
             color: white;
             padding: 10px;
         }
         p {
-            font-family: 'Lato', sans-serif;
-            font-weight: 700;
+            font-family: nth($font,2);
+            font-weight: nth($weightFont2,4);
             font-size: 18px;
             color: black;
             padding: 10px;
@@ -81,9 +72,7 @@
 .galeria {
     background-color: $color-fondo-claro;
     .tituloGaleria {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flexD (flex, center, normal, column);
         h3 {
             @extend %pageSubtitulo;
             margin: 30px 25px 30px 15px;
@@ -102,12 +91,9 @@
         padding-bottom: 45px;
         .gridItem {
             position: relative;
-            box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
-            -webkit-box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
-            -moz-box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
+            @extend %shadow;
             img {
-                width: 100%;
-                height: 100%;
+                @include size (100%, 100%);
                 object-fit: cover;
             }
             h4 {
@@ -115,8 +101,8 @@
                 bottom: 0;
                 width: 100%;
                 color: white;
-                font-family: 'Lato', sans-serif;
-                font-weight: 400;
+                font-family: nth($font,2);
+                font-weight: nth($weightFont2,3);
                 font-size: 20px;
                 background-color: $color-etiquetas; /* transparencia */
                 color: white;
@@ -126,16 +112,14 @@
         }
         .valores {
             background-color: $color-terceriario; 
-            display: flex;
-            align-items: center;
-            justify-content: center;
             background: linear-gradient(120deg, $color-principal, $color-secundario, $color-terceriario) padding-box;
+            @include flex (flex, center, center);
             p {
                 width: 80%;
                 text-align: center;
                 color: white;
-                font-family: 'Lato', sans-serif;
-                font-weight: 400;
+                font-family: nth($font,2);
+                font-weight: nth($weightFont2,4);
                 font-size: 25px;
                 color:white;
             }

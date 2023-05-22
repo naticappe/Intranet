@@ -5,32 +5,44 @@
   box-sizing: border-box; }
 
 /* PALETA DE COLORES */
-/* VARIABLES GENERALES */
+/* TIPOGRAFIAS */
+/* OPERACIONES EXTEND GENERAL*/
 .equipo h1, .videos h1, .problemas h1, .aporte h1 {
-  font-family: 'Urbanist', sans-serif;
+  font-family: "Urbanist";
   font-size: 40px;
   color: #493D5B;
   text-align: center;
   padding: 30px; }
 
 .galeria .tituloGaleria h3, .preguntas .preguntasTitulo h2 {
-  font-family: 'Lato', sans-serif;
+  font-family: sans-serif;
   font-size: 25px;
   font-weight: 700;
   color: #493D5B; }
 
 .galeria .tituloGaleria p, .videos .videosEtiquetas .videosEtiquetasContenedor .videosEtiquetasBody .videosEtiquetasTexto p, .preguntas .preguntasTitulo p {
-  font-family: 'Lato', sans-serif;
+  font-family: sans-serif;
   font-size: 16px;
   color: #39383b; }
 
 .aporte .aporteForm .form div .botonContenedor #botonSolido {
-  font-family: 'Lato', sans-serif;
+  font-family: sans-serif;
   font-size: 15px;
   color: white;
   font-weight: 300;
   background-color: #493D5B;
   border: 1px solid #493D5B;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 8px; }
+
+.videos .videosEtiquetas .videosEtiquetasContenedor .videosEtiquetasBody .videosEtiquetasTexto .boton .botonGuia, .videos .videosEtiquetas .videosEtiquetasContenedor .videosEtiquetasBody .videosEtiquetasTexto .boton .botonEvaluar {
+  font-family: sans-serif;
+  font-size: 15px;
+  color: #39383b;
+  font-weight: 300;
+  background-color: #cdcbce;
+  border: 1px solid #cdcbce;
   text-decoration: none;
   text-align: center;
   border-radius: 8px; }
@@ -42,14 +54,14 @@
 .videos .videosEtiquetas .videosEtiquetasContenedor .videosEtiquetasTitulo {
   background: linear-gradient(120deg, #493D5B, #7A6C8D, #BEA6A0) padding-box; }
 
-.videos .videosEtiquetas .videosEtiquetasContenedor {
+.informacion .informacionProposito img, .informacion .informacionMetodologia img, .etapas .etapasEtiquetas .contenedor, .equipo .equipoEtiquetas div img, .galeria .gridGaleria .gridItem, .videos .videosEtiquetas .videosEtiquetasContenedor {
   box-shadow: 10px 11px 11px -1px rgba(50, 49, 49, 0.45);
   -webkit-box-shadow: 10px 11px 11px -1px rgba(50, 49, 49, 0.45);
   -moz-box-shadow: 10px 11px 11px -1px rgba(50, 49, 49, 0.45); }
 
-/* VARIABLES FORM */
+/* OPERACIONES EXTEND FORM */
 .aporte .aporteForm .form div label {
-  font-family: 'Lato', sans-serif;
+  font-family: sans-serif;
   font-size: 15px;
   font-weight: 700;
   color: #464648;
@@ -59,7 +71,7 @@
   background-color: #fdf9fe;
   border: 1px solid #cdcbce;
   border-radius: 6px;
-  font-family: 'Lato', sans-serif;
+  font-family: sans-serif;
   font-size: 18px;
   font-weight: 300;
   color: black;
@@ -72,6 +84,7 @@
   background-color: white;
   outline: 3px solid #7A6C8D; }
 
+/* OPERACIONES MIXIN */
 .navbar {
   background-color: #493D5B; }
   .navbar .navbar-toggler {
@@ -80,7 +93,7 @@
     justify-content: end; }
     .navbar .navbar-collapse .nav-link {
       color: white;
-      font-family: 'Lato', sans-serif;
+      font-family: sans-serif;
       font-size: 15px; }
 
 .fa-heart-pulse {
@@ -96,46 +109,48 @@
   background-attachment: fixed;
   text-align: left;
   display: flex;
-  flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  align-items: normal;
+  flex-direction: column; }
   .hero .heroTitulo {
     width: 50vw;
-    margin-left: 20px;
+    text-align: center;
     border-top: 5px solid #493D5B;
     border-bottom: 5px solid #493D5B;
-    text-align: center;
-    margin-bottom: 45px; }
+    margin-left: 20px;
+    margin-bottom: 20px; }
     .hero .heroTitulo h1 {
+      font-family: sans-serif;
       font-weight: 900;
-      font-family: 'Lato', sans-serif;
-      font-size: 50px;
+      font-size: 60px;
       color: #493D5B;
       padding: 0px 10px 0px 10px;
       margin-bottom: 0px; }
       .hero .heroTitulo h1 span {
-        font-size: 60px; }
+        font-size: 55px; }
     .hero .heroTitulo h2 {
+      font-family: sans-serif;
       font-weight: 900;
-      font-family: 'Lato', sans-serif;
       font-size: 25px;
       color: #493D5B;
       margin-bottom: 0px;
       padding-bottom: 15px; }
   .hero h3 {
-    font-family: 'Urbanist', sans-serif;
+    width: 50%;
+    font-family: "Urbanist";
+    font-weight: 600;
     font-size: 25px;
+    text-align: center;
     margin-bottom: 0px;
     margin-left: 20px;
-    padding-top: 20px;
-    text-align: center;
-    width: 50%;
-    font-weight: 600; }
+    padding-top: 20px; }
 
 .informacion {
   background-color: #fdf9fe; }
   .informacion .informacionProposito {
     display: flex;
     justify-content: center;
+    align-items: normal;
     padding-top: 40px; }
     .informacion .informacionProposito img {
       width: 30vw;
@@ -143,17 +158,15 @@
       object-fit: cover;
       border: 2px solid #7A6C8D;
       border-radius: 4px;
-      margin: 20px 20px 20px 0px;
-      box-shadow: 10px 11px 11px -1px rgba(50, 49, 49, 0.45);
-      -webkit-box-shadow: 10px 11px 11px -1px rgba(50, 49, 49, 0.45);
-      -moz-box-shadow: 10px 11px 11px -1px rgba(50, 49, 49, 0.45); }
+      margin: 20px 20px 20px 0px; }
     .informacion .informacionProposito div {
       width: 50vw;
       display: flex;
       justify-content: center;
+      align-items: normal;
       flex-direction: column; }
       .informacion .informacionProposito div h3 {
-        font-family: 'Lato', sans-serif;
+        font-family: sans-serif;
         font-size: 25px;
         font-weight: 700;
         color: #7A6C8D;
@@ -161,21 +174,22 @@
         text-underline-offset: 8px;
         margin-bottom: 40px; }
       .informacion .informacionProposito div h4 {
-        font-family: 'Lato', sans-serif;
+        font-family: sans-serif;
         font-size: 18px;
         font-weight: 700;
         color: black;
         margin-bottom: 5px; }
       .informacion .informacionProposito div p {
-        font-family: 'Lato', sans-serif;
+        font-family: sans-serif;
         font-size: 20px;
         color: #39383b;
         font-weight: 400;
         line-height: 1.2; }
   .informacion .informacionMetodologia {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: center;
+    align-items: normal;
+    flex-direction: row-reverse;
     padding-bottom: 40px; }
     .informacion .informacionMetodologia img {
       width: 30vw;
@@ -183,18 +197,16 @@
       object-fit: cover;
       border: 2px solid #7A6C8D;
       border-radius: 4px;
-      margin: 20px 0px 20px 20px;
-      box-shadow: 10px 11px 11px -1px rgba(50, 49, 49, 0.45);
-      -webkit-box-shadow: 10px 11px 11px -1px rgba(50, 49, 49, 0.45);
-      -moz-box-shadow: 10px 11px 11px -1px rgba(50, 49, 49, 0.45); }
+      margin: 20px 0px 20px 20px; }
     .informacion .informacionMetodologia div {
       width: 50vw;
+      text-align: right;
       display: flex;
       justify-content: center;
-      flex-direction: column;
-      text-align: right; }
+      align-items: normal;
+      flex-direction: column; }
       .informacion .informacionMetodologia div h3 {
-        font-family: 'Lato', sans-serif;
+        font-family: sans-serif;
         font-size: 25px;
         font-weight: 700;
         color: #7A6C8D;
@@ -202,13 +214,13 @@
         text-underline-offset: 8px;
         margin-bottom: 40px; }
       .informacion .informacionMetodologia div h4 {
-        font-family: 'Lato', sans-serif;
+        font-family: sans-serif;
         font-size: 18px;
         font-weight: 700;
         color: black;
         margin-bottom: 5px; }
       .informacion .informacionMetodologia div p {
-        font-family: 'Lato', sans-serif;
+        font-family: sans-serif;
         font-size: 20px;
         color: #39383b;
         font-weight: 400;
@@ -217,7 +229,7 @@
 .etapas {
   background-color: #BEA6A0; }
   .etapas h3 {
-    font-family: 'Lato', sans-serif;
+    font-family: sans-serif;
     font-size: 25px;
     color: white;
     font-weight: 700;
@@ -225,18 +237,15 @@
     text-align: center; }
   .etapas .etapasEtiquetas {
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap; }
     .etapas .etapasEtiquetas .contenedor {
       width: 22%;
       border: 1px solid white;
       border-radius: 4px;
       background-color: #cdcbce;
-      margin: 10px 10px 60px 10px;
-      box-shadow: 10px 11px 11px -1px rgba(50, 49, 49, 0.45);
-      -webkit-box-shadow: 10px 11px 11px -1px rgba(50, 49, 49, 0.45);
-      -moz-box-shadow: 10px 11px 11px -1px rgba(50, 49, 49, 0.45); }
+      margin: 10px 10px 60px 10px; }
       .etapas .etapasEtiquetas .contenedor img {
         width: 100%;
         height: 300px;
@@ -249,7 +258,7 @@
         align-items: center; }
         .etapas .etapasEtiquetas .contenedor .contenedorTexto p {
           width: 100;
-          font-family: 'Lato', sans-serif;
+          font-family: sans-serif;
           font-size: 15px;
           font-weight: 400;
           text-align: center;
@@ -258,13 +267,14 @@
           margin-bottom: 0px;
           /* correccion Bootstrap */ }
           .etapas .etapasEtiquetas .contenedor .contenedorTexto p span {
-            font-weight: 600; }
+            font-weight: 400; }
 
 .equipo {
   background-color: #fdf9fe; }
   .equipo .equipoEtiquetas {
     display: flex;
     justify-content: space-evenly;
+    align-items: normal;
     flex-wrap: wrap; }
     .equipo .equipoEtiquetas div {
       width: 340px;
@@ -278,18 +288,15 @@
         object-fit: cover;
         border-radius: 150px;
         padding: 4px;
-        background: linear-gradient(#493D5B, #7A6C8D, #BEA6A0) padding-box;
-        box-shadow: 10px 11px 11px -1px rgba(50, 49, 49, 0.45);
-        -webkit-box-shadow: 10px 11px 11px -1px rgba(50, 49, 49, 0.45);
-        -moz-box-shadow: 10px 11px 11px -1px rgba(50, 49, 49, 0.45); }
+        background: linear-gradient(#493D5B, #7A6C8D, #BEA6A0) padding-box; }
       .equipo .equipoEtiquetas div h3 {
-        font-family: 'Lato', sans-serif;
-        font-size: 20px;
+        font-family: sans-serif;
         font-weight: 700;
+        font-size: 20px;
         color: #493D5B;
         padding: 15px 5px 0px 5px; }
       .equipo .equipoEtiquetas div p {
-        font-family: 'Lato', sans-serif;
+        font-family: sans-serif;
         font-size: 15px;
         color: #39383b;
         padding: 5px;
@@ -303,24 +310,25 @@
   height: 230px;
   background-color: #BEA6A0;
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
+  align-items: center;
   flex-wrap: wrap; }
   .indicadores div {
     width: 30%;
     height: 150px;
-    text-align: center;
     display: flex;
+    justify-content: center;
+    align-items: normal;
     flex-direction: column;
-    justify-content: center; }
+    text-align: center; }
     .indicadores div h2 {
-      font-family: 'Lato', sans-serif;
+      font-family: sans-serif;
       font-weight: 900;
       font-size: 45px;
       color: white;
       padding: 10px; }
     .indicadores div p {
-      font-family: 'Lato', sans-serif;
+      font-family: sans-serif;
       font-weight: 700;
       font-size: 18px;
       color: black;
@@ -330,8 +338,9 @@
   background-color: #fdf9fe; }
   .galeria .tituloGaleria {
     display: flex;
-    flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    align-items: normal;
+    flex-direction: column; }
     .galeria .tituloGaleria h3 {
       margin: 30px 25px 30px 15px; }
     .galeria .tituloGaleria p {
@@ -344,10 +353,7 @@
     margin: 15px 15px 0px 15px;
     padding-bottom: 45px; }
     .galeria .gridGaleria .gridItem {
-      position: relative;
-      box-shadow: 10px 11px 11px -1px rgba(50, 49, 49, 0.45);
-      -webkit-box-shadow: 10px 11px 11px -1px rgba(50, 49, 49, 0.45);
-      -moz-box-shadow: 10px 11px 11px -1px rgba(50, 49, 49, 0.45); }
+      position: relative; }
       .galeria .gridGaleria .gridItem img {
         width: 100%;
         height: 100%;
@@ -357,7 +363,7 @@
         bottom: 0;
         width: 100%;
         color: white;
-        font-family: 'Lato', sans-serif;
+        font-family: sans-serif;
         font-weight: 400;
         font-size: 20px;
         background-color: #493d5ba6;
@@ -367,16 +373,16 @@
         margin-bottom: 0px !important; }
     .galeria .gridGaleria .valores {
       background-color: #BEA6A0;
+      background: linear-gradient(120deg, #493D5B, #7A6C8D, #BEA6A0) padding-box;
       display: flex;
-      align-items: center;
       justify-content: center;
-      background: linear-gradient(120deg, #493D5B, #7A6C8D, #BEA6A0) padding-box; }
+      align-items: center; }
       .galeria .gridGaleria .valores p {
         width: 80%;
         text-align: center;
         color: white;
-        font-family: 'Lato', sans-serif;
-        font-weight: 400;
+        font-family: sans-serif;
+        font-weight: 700;
         font-size: 25px;
         color: white; }
     .galeria .gridGaleria .item4 {
@@ -388,8 +394,9 @@
   background-color: #fdf9fe; }
   .videos .videosEtiquetas {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: normal;
+    flex-wrap: wrap;
     padding-bottom: 40px; }
     .videos .videosEtiquetas .videosEtiquetasContenedor {
       background: #fdf9fe;
@@ -399,16 +406,17 @@
       display: flex;
       flex-direction: column; }
       .videos .videosEtiquetas .videosEtiquetasContenedor .videosEtiquetasTitulo {
+        border-bottom: 1px solid gray;
         display: flex;
         justify-content: space-between;
-        border-bottom: 1px solid gray; }
+        align-items: normal; }
         .videos .videosEtiquetas .videosEtiquetasContenedor .videosEtiquetasTitulo h2 {
-          font-family: 'Lato', sans-serif;
-          font-size: 18px;
+          font-family: sans-serif;
           font-weight: 300;
+          font-size: 18px;
+          text-align: center;
           color: white;
-          margin: 10px;
-          text-align: center; }
+          margin: 10px; }
         .videos .videosEtiquetas .videosEtiquetasContenedor .videosEtiquetasTitulo .iconos .iconoGuia {
           display: none; }
         .videos .videosEtiquetas .videosEtiquetasContenedor .videosEtiquetasTitulo .iconos .iconoEvaluar {
@@ -417,11 +425,12 @@
         display: flex; }
         .videos .videosEtiquetas .videosEtiquetasContenedor .videosEtiquetasBody .videosEtiquetasTexto {
           width: 15vw;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
           text-align: center;
-          margin: 0px 20px; }
+          margin: 0px 20px;
+          display: flex;
+          justify-content: center;
+          align-items: normal;
+          flex-direction: column; }
           .videos .videosEtiquetas .videosEtiquetasContenedor .videosEtiquetasBody .videosEtiquetasTexto p {
             line-height: 1.2;
             margin-bottom: 70px; }
@@ -429,70 +438,56 @@
             display: flex;
             flex-direction: column; }
             .videos .videosEtiquetas .videosEtiquetasContenedor .videosEtiquetasBody .videosEtiquetasTexto .boton .botonGuia {
-              font-family: 'Lato', sans-serif;
-              font-size: 15px;
-              color: #39383b;
-              font-weight: 300;
-              background-color: #cdcbce;
-              border: 1px solid #cdcbce;
-              text-decoration: none;
-              text-align: center;
-              border-radius: 8px;
               width: 100%;
               height: 35px;
               padding-top: 5px;
               margin-bottom: 10px; }
+              .videos .videosEtiquetas .videosEtiquetasContenedor .videosEtiquetasBody .videosEtiquetasTexto .boton .botonGuia:hover {
+                outline: 3px solid #7A6C8D; }
             .videos .videosEtiquetas .videosEtiquetasContenedor .videosEtiquetasBody .videosEtiquetasTexto .boton .botonEvaluar {
-              font-family: 'Lato', sans-serif;
-              font-size: 15px;
-              color: #39383b;
-              font-weight: 300;
-              background-color: #cdcbce;
-              border: 1px solid #cdcbce;
-              text-decoration: none;
-              text-align: center;
-              border-radius: 8px;
               width: 100%;
               height: 35px;
               padding-top: 5px; }
+              .videos .videosEtiquetas .videosEtiquetasContenedor .videosEtiquetasBody .videosEtiquetasTexto .boton .botonEvaluar:hover {
+                outline: 3px solid #7A6C8D; }
         .videos .videosEtiquetas .videosEtiquetasContenedor .videosEtiquetasBody .iframeContenedor {
           width: 25vw;
           height: 0;
           overflow: hidden;
           padding-bottom: 56.25%;
           padding-top: 30px;
-          position: relative;
-          border: 1px solid gray; }
+          position: relative; }
           .videos .videosEtiquetas .videosEtiquetasContenedor .videosEtiquetasBody .iframeContenedor iframe {
+            width: 100%;
             height: 100%;
             left: 0;
             position: absolute;
             top: 0;
-            width: 100%;
             z-index: 10; }
 
 .problemas {
   background-color: #fdf9fe; }
   .problemas .testimonio {
+    background-color: #BEA6A0;
     display: flex;
     justify-content: center;
-    background-color: #BEA6A0; }
+    align-items: normal; }
     .problemas .testimonio .testimonioTexto {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
       width: 300px;
-      margin-right: 50px; }
+      margin-right: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
       .problemas .testimonio .testimonioTexto h2 {
         margin-bottom: 30px; }
         .problemas .testimonio .testimonioTexto h2 i {
           font-size: 40px; }
       .problemas .testimonio .testimonioTexto p {
-        font-family: 'Lato', sans-serif;
+        font-family: sans-serif;
+        font-weight: 700;
         font-size: 16px;
-        text-align: center;
-        font-weight: 700; }
+        text-align: center; }
     .problemas .testimonio iframe {
       width: 560px;
       height: 350px; }
@@ -508,12 +503,12 @@
     padding: 10px 15px 60px 15px; }
     .preguntas .accordion .accordion-item .accordion-header .accordion-button.collapsed {
       background-color: #cdcbce;
-      font-family: 'Lato', sans-serif;
+      font-family: sans-serif;
       font-weight: 400;
       color: #493D5B; }
     .preguntas .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
       background-color: #cdcbce;
-      font-family: 'Lato', sans-serif;
+      font-family: sans-serif;
       font-weight: 400;
       color: #493D5B; }
     .preguntas .accordion .accordion-item .accordion-header .accordion-button:focus {
@@ -521,7 +516,7 @@
       box-shadow: 0 0 0 0.25rem #7A6C8D; }
     .preguntas .accordion .accordion-item .accordion-body {
       background-color: #fdf9fe;
-      font-family: 'Lato', sans-serif; }
+      font-family: sans-serif; }
 
 .aporte {
   background: linear-gradient(166deg, white 0%, rgba(208, 208, 208, 0.0555035) 98%), url(../img/mailbox.png);
@@ -530,15 +525,19 @@
   background-position: center;
   height: 680px;
   display: flex;
+  justify-content: normal;
+  align-items: normal;
   flex-direction: column; }
   .aporte .aporteForm {
     height: 100%;
     display: flex;
+    justify-content: normal;
     align-items: center; }
     .aporte .aporteForm .form {
       display: flex;
-      flex-direction: column;
       justify-content: center;
+      align-items: normal;
+      flex-direction: column;
       margin: 0px 50px 0px 50px; }
       .aporte .aporteForm .form div label {
         display: block; }
@@ -549,25 +548,26 @@
         width: 400px;
         height: 40px; }
       .aporte .aporteForm .form div textarea {
+        margin-bottom: 20px;
         width: 400px;
-        height: 110px;
-        margin-bottom: 20px; }
+        height: 110px; }
       .aporte .aporteForm .form div .botonContenedor {
         display: flex;
-        justify-content: end; }
+        justify-content: end;
+        align-items: normal; }
         .aporte .aporteForm .form div .botonContenedor #botonSolido {
+          padding-left: 0px;
           width: 150px;
-          height: 40px;
-          padding-left: 0px; }
+          height: 40px; }
           .aporte .aporteForm .form div .botonContenedor #botonSolido:hover {
             background-color: #7A6C8D; }
 
 .footer {
   background-color: #cdcbce;
+  height: 12vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 12vh; }
+  align-items: center; }
   .footer .footerLinks {
     border-right: 1px solid gray;
     padding-right: 20px; }
@@ -581,20 +581,21 @@
         .footer .footerLinks ul li a {
           text-decoration: none;
           color: black;
-          font-family: 'Lato', sans-serif;
-          font-size: 14px;
+          font-family: sans-serif;
           font-weight: 700;
+          font-size: 14px;
           margin-right: 8px; }
           .footer .footerLinks ul li a:hover {
             color: #7A6C8D; }
     .footer .footerLinks p {
       color: black;
-      font-family: 'Lato', sans-serif;
+      font-family: sans-serif;
       font-size: 14px;
       font-style: italic;
       margin-bottom: 0px; }
   .footer .footerRedes {
     display: flex;
+    align-items: center;
     padding-left: 20px; }
     .footer .footerRedes a {
       font-size: 8vh;
@@ -634,9 +635,10 @@
     align-items: center;
     justify-content: end; }
     .hero .heroTitulo {
-      width: 70vw; }
+      width: 70vw;
+      margin-bottom: 60px; }
       .hero .heroTitulo h1 {
-        padding: 0px 10px 0px 10px; }
+        padding: 0px 20px 0px 10px; }
     .hero h3 {
       display: none; } }
 
@@ -679,9 +681,10 @@
 
 @media screen and (max-width: 920px) {
   .informacion .informacionProposito {
-    flex-direction: column-reverse;
+    display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex-direction: column-reverse; }
     .informacion .informacionProposito img {
       width: 80vw;
       margin: 20px 0px 20px 0px; }
@@ -689,9 +692,10 @@
       width: 80vw;
       text-align: center; }
   .informacion .informacionMetodologia {
-    flex-direction: column-reverse;
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column-reverse;
     padding-top: 40px; }
     .informacion .informacionMetodologia img {
       width: 80vw;
@@ -730,13 +734,21 @@
     grid-template-columns: 1fr;
     grid-template-rows: 200px; } }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 660px) {
+  .hero .heroTitulo h1 {
+    font-size: 50px; }
+    .hero .heroTitulo h1 span {
+      font-size: 55px; }
+  .hero .heroTitulo h2 {
+    font-size: 22px; } }
+
+@media screen and (max-width: 580px) {
   .hero .heroTitulo h1 {
     font-size: 40px; }
     .hero .heroTitulo h1 span {
-      font-size: 60px; }
+      font-size: 45px; }
   .hero .heroTitulo h2 {
-    font-size: 15px; } }
+    font-size: 18px; } }
 
 @media screen and (max-width: 520px) {
   .problemas .testimonio .testimonioTexto {
@@ -763,10 +775,12 @@
   .aporte .aporteForm .form div textarea {
     font-size: 16px; } }
 
-@media screen and (max-width: 400px) {
-  .hero .heroTitulo h1 {
-    font-size: 30px; }
-    .hero .heroTitulo h1 span {
-      font-size: 50px; }
-  .hero .heroTitulo h2 {
-    font-size: 20px; } }
+@media screen and (max-width: 460px) {
+  .hero .heroTitulo {
+    margin-bottom: 75px; }
+    .hero .heroTitulo h1 {
+      font-size: 28px; }
+      .hero .heroTitulo h1 span {
+        font-size: 31px; }
+    .hero .heroTitulo h2 {
+      font-size: 16px; } }

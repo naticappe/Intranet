@@ -4,16 +4,12 @@
         @extend %pageTitulo;
     }
     .testimonio {
-        display: flex;
-        justify-content: center;
         background-color: $color-terceriario;
+        @include flex (flex, center, normal);
         .testimonioTexto {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
             width: 300px;
             margin-right: 50px;
+            @include flexD (flex, center, center, column);
             h2 {
                 margin-bottom: 30px;
                 i {
@@ -21,15 +17,14 @@
                 }
             }
             p {
-                font-family: 'Lato', sans-serif;
+                font-family: nth($font,2);
+                font-weight: nth($weightFont2,4);
                 font-size: 16px;
                 text-align: center;
-                font-weight: 700;
             }
         }
         iframe {
-            width: 560px;
-            height: 350px;
+            @include size (560px, 350px);
         }
     }
 }
@@ -52,15 +47,15 @@
             .accordion-header {
                 .accordion-button.collapsed {
                     background-color: $color-fondo-intermedio;
-                    font-family: 'Lato', sans-serif;
-                    font-weight: 400;
+                    font-family: nth($font,2);
+                    font-weight: nth($weightFont2,3);
                     color: $color-principal;
                 }
                 .accordion-button {
                     &:not(.collapsed) {
                         background-color: $color-fondo-intermedio;
-                        font-family: 'Lato', sans-serif;
-                        font-weight: 400;
+                        font-family: nth($font,2);
+                        font-weight: nth($weightFont2,3);
                         color: $color-principal;
                     }
                     &:focus {
@@ -71,7 +66,7 @@
             } 
             .accordion-body {
                 background-color: $color-fondo-claro;
-                font-family: 'Lato', sans-serif;
+                font-family: nth($font,2);
             }
         }
 }

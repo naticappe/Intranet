@@ -11,9 +11,25 @@ $color-gradiente-claro:#BEA6A0;
 $color-etiquetas:#493d5ba6;
 $color-footer:#cdcbce;
 
-/* VARIABLES GENERALES */
+/* TIPOGRAFIAS */
+$font:
+'Urbanist', sans-serif,
+'Lato', sans-serif;
+
+$weightFont1:
+500,
+600;
+
+$weightFont2: 
+100,
+300,
+400,
+700,
+900;
+
+/* OPERACIONES EXTEND GENERAL*/
 %pageTitulo {
-    font-family: 'Urbanist', sans-serif;
+    font-family: nth($font,1);
     font-size: 40px;
     color: $color-principal;
     text-align: center;
@@ -21,25 +37,37 @@ $color-footer:#cdcbce;
 }
 
 %pageSubtitulo {
-    font-family: 'Lato', sans-serif;
+    font-family: nth($font,2);
     font-size: 25px;
     font-weight: 700;
     color: $color-principal;
 }
 
 %pageParrafo {
-    font-family: 'Lato', sans-serif;
+    font-family: nth($font,2);
     font-size: 16px;
     color: #39383b;
 }
 
 %boton {
-    font-family: 'Lato', sans-serif;
+    font-family: nth($font,2);
     font-size: 15px;
     color: white;   
     font-weight: 300;
     background-color: $color-principal;
     border: 1px solid $color-principal;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+}
+
+%botonVideos {
+    font-family: nth($font,2);
+    font-size: 15px;
+    color: #39383b;   
+    font-weight: 300;
+    background-color: $color-fondo-intermedio;
+    border: 1px solid $color-fondo-intermedio;
     text-decoration: none;
     text-align: center;
     border-radius: 8px;
@@ -60,9 +88,9 @@ $color-footer:#cdcbce;
     -moz-box-shadow: 10px 11px 11px -1px rgba(50,49,49,0.45);
 }
 
-/* VARIABLES FORM */
+/* OPERACIONES EXTEND FORM */
 %formLabel {
-    font-family: 'Lato', sans-serif;
+    font-family: nth($font,2);
     font-size: 15px;
     font-weight: 700;
     color: #464648;
@@ -73,7 +101,7 @@ $color-footer:#cdcbce;
     background-color: $color-fondo-claro;
     border: 1px solid $color-fondo-intermedio;
     border-radius: 6px;
-    font-family: 'Lato', sans-serif;
+    font-family: nth($font,2);
     font-size: 18px;
     font-weight: 300;
     color: black;
@@ -87,4 +115,23 @@ $color-footer:#cdcbce;
 %formFocus {
     background-color: white;
     outline: 3px solid $color-secundario;
+}
+
+/* OPERACIONES MIXIN */
+@mixin flex ($flex, $justify, $align) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flexD ($flex, $justify, $align, $column) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $column;
+}
+
+@mixin size ($width, $height) {
+    width: $width;
+    height: $height;
 }

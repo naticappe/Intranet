@@ -56,8 +56,9 @@
         justify-content: end;
         .heroTitulo {
             width: 70vw;
+            margin-bottom: 60px;
             h1 {
-                padding: 0px 10px 0px 10px;
+                padding: 0px 20px 0px 10px;
             }
         }
         h3 {
@@ -138,9 +139,7 @@
 @media screen and (max-width:920px) {
     .informacion {
         .informacionProposito {
-            flex-direction: column-reverse;
-            justify-content: center;
-            align-items: center;
+            @include flexD (flex, center, center, column-reverse);
             img {
                 width: 80vw;
                 margin: 20px 0px 20px 0px;
@@ -151,9 +150,7 @@
             }
         }
         .informacionMetodologia {
-            flex-direction: column-reverse;
-            justify-content: center;
-            align-items: center;
+            @include flexD (flex, center, center, column-reverse);
             padding-top: 40px;
             img {
                 width: 80vw;
@@ -207,8 +204,7 @@
                 width: 450px;
             }
             iframe {
-                width: 450px;
-                height: 290px;                
+                @include size (450px, 290px);               
             }
         }
     }
@@ -230,17 +226,33 @@
     }
 }
 
-@media screen and (max-width:560px) {
+@media screen and (max-width:660px) {
+    .hero {
+        .heroTitulo {
+            h1 {
+                font-size: 50px;
+                span {
+                    font-size: 55px;
+                } ;
+            }
+            h2 {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:580px) {
     .hero {
         .heroTitulo {
             h1 {
                 font-size: 40px;
                 span {
-                    font-size: 60px;
+                    font-size: 45px;
                 } ;
             }
             h2 {
-                font-size: 15px;
+                font-size: 18px;
             }
         }
     }
@@ -253,8 +265,7 @@
                 width: 300px;
             }
             iframe {
-                width: 300px;
-                height: 205px;                
+                @include size (300px, 205px);              
             }
         }
     }
@@ -303,17 +314,18 @@
     }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:460px) {
     .hero {
         .heroTitulo {
+            margin-bottom: 75px;
             h1 {
-                font-size: 30px;
+                font-size: 28px;
                 span {
-                    font-size: 50px;
+                    font-size: 31px;
                 } 
             }
             h2 {
-                font-size: 20px;
+                font-size: 16px;
             }
         }
     }
