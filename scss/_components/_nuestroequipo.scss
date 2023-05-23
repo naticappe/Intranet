@@ -18,6 +18,11 @@
                 padding: 4px;
                 background: linear-gradient($color-gradiente-oscuro, $color-secundario, $color-terceriario) padding-box;
                 @extend %shadow;
+                transition-property: padding;
+                transition-duration: 1.5s;
+                &:hover {
+                    padding: 8px;
+                }
             }
             h2 {
                 font-family: nth($font,2);
@@ -42,7 +47,6 @@
         }
     }
 }
-
 .indicadores {
     height: 230px;
     background-color: $color-terceriario;
@@ -59,6 +63,10 @@
             font-size: 45px;
             color: white;
             padding: 10px;
+            transition-duration: 1s;
+            &:hover {
+                text-shadow: 7px 2px 11px $color-fondo-intermedio;
+            }
         }
         p {
             font-family: nth($font,2);

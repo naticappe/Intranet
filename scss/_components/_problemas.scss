@@ -12,6 +12,10 @@
             @include flexD (flex, center, center, column);
             h2 {
                 margin-bottom: 30px;
+                transition-duration: 1s;
+                &:hover {
+                    text-shadow: 7px 2px 11px rgba(0,0,0,0.72);
+                }
                 i {
                     font-size: 40px;
                 }
@@ -21,6 +25,10 @@
                 font-weight: nth($weightFont2,4);
                 font-size: 16px;
                 text-align: center;
+                transition-duration: 1s;
+                &:hover {
+                    text-shadow: 7px 2px 11px rgba(0,0,0,0.72);
+                }
             }
         }
         iframe {

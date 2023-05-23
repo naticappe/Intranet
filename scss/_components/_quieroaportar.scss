@@ -54,12 +54,14 @@
                         padding-left: 0px;
                         @include size (150px, 40px);
                         @extend %boton;
+                        transition-duration: 1s;
                         &:hover {
                             background-color: $color-secundario;
+                            transform: scale(1.03);
+                            }
                         }
                 }
                 }
             }
         }
-    }
 }

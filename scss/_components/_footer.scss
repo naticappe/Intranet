@@ -18,6 +18,7 @@
                     font-weight: nth($weightFont2,4);
                     font-size: 14px;
                     margin-right: 8px;
+                    transition-duration: 1s;
                     &:hover {
                         color: $color-secundario
                     }

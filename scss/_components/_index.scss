@@ -147,11 +147,15 @@
             border-radius: 4px;
             background-color:$color-fondo-intermedio;
             margin: 10px 10px 60px 10px;
+            transition-duration: 1.2s;
             @extend %shadow;
             img {
                 @include size (100%, 300px);
                 object-fit: cover;
                 border-bottom: 1px solid $color-fondo-intermedio;
+            }
+            &:hover {
+                transform: scale(1.03);
             }
             .contenedorTexto {
                 @include size (100%, 90px);
