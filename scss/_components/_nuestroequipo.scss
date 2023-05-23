@@ -19,7 +19,7 @@
                 background: linear-gradient($color-gradiente-oscuro, $color-secundario, $color-terceriario) padding-box;
                 @extend %shadow;
             }
-            h3 {
+            h2 {
                 font-family: nth($font,2);
                 font-weight: nth($weightFont2,4);
                 font-size: 20px;

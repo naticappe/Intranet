@@ -1,7 +1,7 @@
 .navbar {
     background-color: $color-navegacion;
     .navbar-toggler {
-        color: #b26b67;
+        color: $color-secundario;
     }
     .navbar-collapse {
         justify-content: end;

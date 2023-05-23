@@ -38,8 +38,8 @@ $weightFont2:
 
 %pageSubtitulo {
     font-family: nth($font,2);
+    font-weight: nth($weightFont2,4);
     font-size: 25px;
-    font-weight: 700;
     color: $color-principal;
 }
 
@@ -53,7 +53,7 @@ $weightFont2:
     font-family: nth($font,2);
     font-size: 15px;
     color: white;   
-    font-weight: 300;
+    font-weight: nth($weightFont2,2);
     background-color: $color-principal;
     border: 1px solid $color-principal;
     text-decoration: none;
@@ -65,7 +65,7 @@ $weightFont2:
     font-family: nth($font,2);
     font-size: 15px;
     color: #39383b;   
-    font-weight: 300;
+    font-weight: nth($weightFont2,2);
     background-color: $color-fondo-intermedio;
     border: 1px solid $color-fondo-intermedio;
     text-decoration: none;
@@ -92,7 +92,7 @@ $weightFont2:
 %formLabel {
     font-family: nth($font,2);
     font-size: 15px;
-    font-weight: 700;
+    font-weight: nth($weightFont2,4);
     color: #464648;
     padding: 8px 5px 0px 0px;
 }
@@ -103,13 +103,14 @@ $weightFont2:
     border-radius: 6px;
     font-family: nth($font,2);
     font-size: 18px;
-    font-weight: 300;
+    font-weight: nth($weightFont2,2);
     color: black;
     padding-left: 15px;
 }
 
 %formPlaceholder {
     color: #686769;
+    font-weight: nth($weightFont2,1);
 }
 
 %formFocus {

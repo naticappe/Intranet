@@ -16,8 +16,8 @@
 
 .galeria .tituloGaleria h3, .preguntas .preguntasTitulo h2 {
   font-family: sans-serif;
-  font-size: 25px;
   font-weight: 700;
+  font-size: 25px;
   color: #493D5B; }
 
 .galeria .tituloGaleria p, .videos .videosEtiquetas .videosEtiquetasContenedor .videosEtiquetasBody .videosEtiquetasTexto p, .preguntas .preguntasTitulo p {
@@ -78,7 +78,8 @@
   padding-left: 15px; }
 
 .aporte .aporteForm .form div input::placeholder, .aporte .aporteForm .form div select, .aporte .aporteForm .form div textarea::placeholder {
-  color: #686769; }
+  color: #686769;
+  font-weight: 100; }
 
 .aporte .aporteForm .form div input:focus, .aporte .aporteForm .form div select:focus, .aporte .aporteForm .form div textarea:focus {
   background-color: white;
@@ -88,7 +89,7 @@
 .navbar {
   background-color: #493D5B; }
   .navbar .navbar-toggler {
-    color: #b26b67; }
+    color: #7A6C8D; }
   .navbar .navbar-collapse {
     justify-content: end; }
     .navbar .navbar-collapse .nav-link {
@@ -101,7 +102,7 @@
   font-size: 30px; }
 
 .hero {
-  background-image: url(../img/fondo.png);
+  background-image: url(../img/fondo.jpg);
   background-size: cover;
   height: 93vh;
   background-repeat: no-repeat;
@@ -267,7 +268,7 @@
           margin-bottom: 0px;
           /* correccion Bootstrap */ }
           .etapas .etapasEtiquetas .contenedor .contenedorTexto p span {
-            font-weight: 400; }
+            font-weight: 700; }
 
 .equipo {
   background-color: #fdf9fe; }
@@ -289,7 +290,7 @@
         border-radius: 150px;
         padding: 4px;
         background: linear-gradient(#493D5B, #7A6C8D, #BEA6A0) padding-box; }
-      .equipo .equipoEtiquetas div h3 {
+      .equipo .equipoEtiquetas div h2 {
         font-family: sans-serif;
         font-weight: 700;
         font-size: 20px;
@@ -519,7 +520,7 @@
       font-family: sans-serif; }
 
 .aporte {
-  background: linear-gradient(166deg, white 0%, rgba(208, 208, 208, 0.0555035) 98%), url(../img/mailbox.png);
+  background: linear-gradient(166deg, white 0%, rgba(208, 208, 208, 0.0555035) 98%), url(../img/mailbox.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

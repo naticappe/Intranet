@@ -1,5 +1,5 @@
 .hero {
-    background-image: url(../img/fondo.png);
+    background-image: url(../img/fondo.jpg);
     background-size: cover;
     height: 93vh;
     background-repeat: no-repeat;
@@ -167,7 +167,7 @@
                     padding: 5px;
                     margin-bottom: 0px; /* correccion Bootstrap */
                     span {
-                        font-weight: nth($weightFont2,3);
+                        font-weight: nth($weightFont2,4);
                     }
                 }
             }
