@@ -10,10 +10,46 @@
     .heroTitulo {
         width: 50vw;
         text-align: center;
-        border-top: 5px solid $color-principal;
-        border-bottom: 5px solid $color-principal; 
         margin-left: 20px;
+        margin-right: 20px;
         margin-bottom: 20px;
+        position: relative;
+        .lineaSuperior {
+            height: 5px;
+            margin-bottom: 5px;
+            background-color: $color-principal;
+            animation: borderSuperior 3s cubic-bezier(0.16,0.03,0.07,0.78) 0.2s 1;
+            @keyframes borderSuperior {
+                0%{
+                    width: 10%;
+                }
+                100%{
+                    width: 100%;
+                }
+            }
+        }
+        .lineaInferior {
+            height: 5px;
+            width: 100%;
+            position: absolute;
+            right: 0;
+            background-color: $color-principal;
+            margin-top: 5px;
+            animation-name: borderInferior;
+            animation-duration: 3s;
+            animation-delay: 0.2s;
+            animation-timing-function: cubic-bezier(0.16,0.03,0.07,0.78);
+            /* animation-direction: alternate-reverse; */
+            animation-iteration-count: 1;
+            @keyframes borderInferior {
+                from{
+                    width: 10%;
+                }
+                to{
+                    width: 100%;
+                }
+            }
+        }
         h1 {
             font-family: nth($font,2);
             font-weight: nth($weightFont2,5);
@@ -23,6 +59,18 @@
             margin-bottom: 0px;
             span {
             font-size: 55px;
+            animation: dots 1s normal 1.7s 1;
+            @keyframes dots{
+                0%{
+                    color: $color-principal;
+                }
+                50%{
+                    color: $color-secundario;
+                }
+                100%{
+                    color: $color-principal;
+                }
+            }
         }
         }
         h2 {

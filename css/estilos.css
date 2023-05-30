@@ -1,12 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Urbanist:wght@500;600&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
 /* PALETA DE COLORES */
 /* TIPOGRAFIAS */
 /* OPERACIONES EXTEND GENERAL*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Urbanist:wght@500;600&display=swap");
 .equipo h1, .videos h1, .problemas h1, .aporte h1 {
   font-family: "Urbanist";
   font-size: 40px;
@@ -86,6 +81,11 @@
   outline: 3px solid #7A6C8D; }
 
 /* OPERACIONES MIXIN */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 .navbar {
   background-color: #493D5B; }
   .navbar .navbar-toggler {
@@ -116,10 +116,40 @@
   .hero .heroTitulo {
     width: 50vw;
     text-align: center;
-    border-top: 5px solid #493D5B;
-    border-bottom: 5px solid #493D5B;
     margin-left: 20px;
-    margin-bottom: 20px; }
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative; }
+    .hero .heroTitulo .lineaSuperior {
+      height: 5px;
+      margin-bottom: 5px;
+      background-color: #493D5B;
+      animation: borderSuperior 3s cubic-bezier(0.16, 0.03, 0.07, 0.78) 0.2s 1; }
+
+@keyframes borderSuperior {
+  0% {
+    width: 10%; }
+  100% {
+    width: 100%; } }
+    .hero .heroTitulo .lineaInferior {
+      height: 5px;
+      width: 100%;
+      position: absolute;
+      right: 0;
+      background-color: #493D5B;
+      margin-top: 5px;
+      animation-name: borderInferior;
+      animation-duration: 3s;
+      animation-delay: 0.2s;
+      animation-timing-function: cubic-bezier(0.16, 0.03, 0.07, 0.78);
+      /* animation-direction: alternate-reverse; */
+      animation-iteration-count: 1; }
+
+@keyframes borderInferior {
+  from {
+    width: 10%; }
+  to {
+    width: 100%; } }
     .hero .heroTitulo h1 {
       font-family: sans-serif;
       font-weight: 900;
@@ -128,7 +158,16 @@
       padding: 0px 10px 0px 10px;
       margin-bottom: 0px; }
       .hero .heroTitulo h1 span {
-        font-size: 55px; }
+        font-size: 55px;
+        animation: dots 1s normal 1.7s 1; }
+
+@keyframes dots {
+  0% {
+    color: #493D5B; }
+  50% {
+    color: #7A6C8D; }
+  100% {
+    color: #493D5B; } }
     .hero .heroTitulo h2 {
       font-family: sans-serif;
       font-weight: 900;
