@@ -49,10 +49,10 @@
                     }
                 }
                 .botonContenedor {
-                    @include flex(flex, end, normal);
+                    @include flex(flex, center, normal);
                     #botonSolido {
                         padding-left: 0px;
-                        @include size (150px, 40px);
+                        @include size (200px, 40px);
                         @extend %boton;
                         transition-duration: 1s;
                         &:hover {

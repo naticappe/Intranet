@@ -198,7 +198,7 @@
       object-fit: cover;
       border: 2px solid #7A6C8D;
       border-radius: 4px;
-      margin: 20px 20px 20px 0px; }
+      margin: 20px 50px 20px 0px; }
     .informacion .informacionProposito div {
       width: 50vw;
       display: flex;
@@ -218,13 +218,14 @@
         font-size: 18px;
         font-weight: 700;
         color: black;
-        margin-bottom: 5px; }
+        margin-bottom: 15px; }
       .informacion .informacionProposito div p {
         font-family: sans-serif;
         font-size: 20px;
         color: #39383b;
         font-weight: 400;
-        line-height: 1.2; }
+        line-height: 1.2;
+        margin-bottom: 0px; }
   .informacion .informacionMetodologia {
     display: flex;
     justify-content: center;
@@ -237,7 +238,7 @@
       object-fit: cover;
       border: 2px solid #7A6C8D;
       border-radius: 4px;
-      margin: 20px 0px 20px 20px; }
+      margin: 20px 0px 20px 50px; }
     .informacion .informacionMetodologia div {
       width: 50vw;
       text-align: right;
@@ -258,13 +259,14 @@
         font-size: 18px;
         font-weight: 700;
         color: black;
-        margin-bottom: 5px; }
+        margin-bottom: 15px; }
       .informacion .informacionMetodologia div p {
         font-family: sans-serif;
         font-size: 20px;
         color: #39383b;
         font-weight: 400;
-        line-height: 1.2; }
+        line-height: 1.2;
+        margin-bottom: 0px; }
 
 .etapas {
   background-color: #BEA6A0; }
@@ -619,11 +621,11 @@
         height: 110px; }
       .aporte .aporteForm .form div .botonContenedor {
         display: flex;
-        justify-content: end;
+        justify-content: center;
         align-items: normal; }
         .aporte .aporteForm .form div .botonContenedor #botonSolido {
           padding-left: 0px;
-          width: 150px;
+          width: 200px;
           height: 40px;
           transition-duration: 1s; }
           .aporte .aporteForm .form div .botonContenedor #botonSolido:hover {

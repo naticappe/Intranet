@@ -103,7 +103,7 @@
             object-fit: cover;
             border: 2px solid $color-secundario;
             border-radius: 4px;
-            margin: 20px 20px 20px 0px;
+            margin: 20px 50px 20px 0px;
             @extend %shadow;
         }
         div {
@@ -123,7 +123,7 @@
                 font-size: 18px;
                 font-weight: nth($weightFont2,4);
                 color: black;
-                margin-bottom: 5px;
+                margin-bottom: 15px;
             }
             p {
                 font-family: nth($font,2);
@@ -131,6 +131,7 @@
                 color: #39383b ;
                 font-weight: 400;
                 line-height: 1.2;
+                margin-bottom:0px;
             }
         }
     }
@@ -142,7 +143,7 @@
             object-fit: cover;
             border: 2px solid $color-secundario;
             border-radius: 4px;
-            margin: 20px 0px 20px 20px;
+            margin: 20px 0px 20px 50px;
             @extend %shadow;
         }
         div {
@@ -164,7 +165,7 @@
                 font-size: 18px;
                 font-weight: nth($weightFont2,4);
                 color: black;
-                margin-bottom: 5px;
+                margin-bottom: 15px;
             }
             p {
                 font-family: nth($font,2);
@@ -172,6 +173,7 @@
                 color: #39383b ;
                 font-weight: nth($weightFont2,3);
                 line-height: 1.2;
+                margin-bottom: 0px;
             }
         }
     }
